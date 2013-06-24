@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{8821AA
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetReturn", "NetReturn\NetReturn.csproj", "{E8251A18-6306-4BF5-AA9F-8A40A0828718}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{CC8F84FA-7F47-4F51-8B07-CE8E2C23330F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC8F84FA-7F47-4F51-8B07-CE8E2C23330F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC8F84FA-7F47-4F51-8B07-CE8E2C23330F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8251A18-6306-4BF5-AA9F-8A40A0828718}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8251A18-6306-4BF5-AA9F-8A40A0828718}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8251A18-6306-4BF5-AA9F-8A40A0828718}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8251A18-6306-4BF5-AA9F-8A40A0828718}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
