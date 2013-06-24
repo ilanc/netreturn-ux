@@ -13,7 +13,7 @@ Ext.define('App1.Application', {
     ],
 
     stores: [
-        // TODO: add stores here
+        'SimpleStore'
     ],
 
     launch: function () {
