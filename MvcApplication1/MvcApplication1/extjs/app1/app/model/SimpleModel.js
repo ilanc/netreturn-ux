@@ -5,6 +5,6 @@
         { name: 'price', type: 'float' },
         { name: 'change', type: 'float' },
         { name: 'pctChange', type: 'float' },
-        { name: 'lastChange', type: 'date', dateFormat: 'n/j h:ia' }
+        { name: 'lastChange', type: 'date', dateFormat: 'Y-m-d' }
     ]
 });
