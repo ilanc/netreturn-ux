@@ -10,5 +10,6 @@
 Ext.application({
     name: 'App1',
     extend: 'App1.Application',
-    autoCreateViewport: false       // NOTE: use App1.Application.launch() instead
+    appFolder: _EXTROOT + '/app1/app',  // NOTE: needs to be in app.js & app/application.js. Careful it's not overridden in bootstrap.js
+    autoCreateViewport: false           // NOTE: use App1.Application.launch() instead
 });

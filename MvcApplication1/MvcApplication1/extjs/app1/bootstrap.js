@@ -7,9 +7,9 @@
 Ext.Loader.addClassPathMappings({
   " Ext.Msg": "../ext/src/window/MessageBox.js",
   "Ext": "../ext/src",
-  "App1": "app",
-  "Ext.rtl.EventObjectImpl": "../ext/src/rtl/EventObject.js",
-  "App1.Application": "app/application.js"
+  //HACK "App1": "app",
+  "Ext.rtl.EventObjectImpl": "../ext/src/rtl/EventObject.js"
+  //HACK "App1.Application": "app/application.js"
 });
 Ext.ClassManager.addNameAlternateMappings({
   "Ext.ux.BoxReorderer": [],

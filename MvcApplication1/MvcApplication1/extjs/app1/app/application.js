@@ -1,7 +1,8 @@
 Ext.define('App1.Application', {
+    extend: 'Ext.app.Application',
     name: 'App1',
     autoCreateViewport: false,      // NOTE: careful it's not overridden in ../app.js
-    extend: 'Ext.app.Application',
+    appFolder: _EXTROOT + '/app1/app',  // NOTE: needs to be in app.js & app/application.js. Careful it's not overridden in bootstrap.js
 
     views: [
         'SimpleGrid'

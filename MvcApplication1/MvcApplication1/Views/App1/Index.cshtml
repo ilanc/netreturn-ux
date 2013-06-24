@@ -4,10 +4,16 @@
 }
 
 @section CSS {
-    <link rel="stylesheet" type="text/css" href="/extjs/resources/css/ext-all.css" />
+    @*<link rel="stylesheet" type="text/css" href="/extjs/ext/packages/ext-theme-classic/build/resources/ext-theme-classic-all.css" />*@
+    <link rel="stylesheet" type="text/css" href="/extjs/app1/bootstrap.css" />
 }
 
 @section JavaScripts_End {
-    <script type="text/javascript" src="/extjs/ext-dev.js"></script>
-    <script type="text/javascript" src="/extjs/app1/SimpleGrid.js"></script>
+    <script type="text/javascript">
+        _EXTROOT = '/extjs';    // for paths inside .js files
+        _INDEXHTML = false;     // change processing in .js files for static index.html
+    </script>
+    <script type="text/javascript" src="/extjs/ext/ext-all-dev.js"></script>
+    <script type="text/javascript" src="/extjs/app1/bootstrap.js"></script>
+    <script type="text/javascript" src="/extjs/app1/app.js"></script>
 }
