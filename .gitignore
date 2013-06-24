@@ -1,0 +1,15 @@
+extjs/ext
+extjs/packages
+build
+extjs/shared/resources/bootstrap/images
+.sass-cache
+[Bb]in/
+[Oo]bj/
+[Ww]orking/
+TestResults/
+Packages/
+*.suo
+*.user
+_ReSharper.*
+*.ReSharper.user
+*.resharper.user
