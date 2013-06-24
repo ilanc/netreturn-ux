@@ -1,16 +1,46 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>App1</title>
-    <!-- <x-compile> -->
-        <!-- <x-bootstrap> -->
-            <link rel="stylesheet" href="bootstrap.css">
-            <script src="../ext/ext-dev.js"></script>
-            <script src="bootstrap.js"></script>
-        <!-- </x-bootstrap> -->
-        <script src="app.js"></script>
-    <!-- </x-compile> -->
-</head>
-<body></body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>App1</title>
+        <link href="../../favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- <x-compile> -->
+        <link href="../../Content/site.css" rel="stylesheet"/>
+        <link href="../../Content/menu.css" rel="stylesheet"/>
+
+        <script src="../../Scripts/modernizr-2.6.2.js"></script>
+        <script src="../../Scripts/jquery-1.8.2.js"></script>
+            <!-- <x-bootstrap> -->
+                <link rel="stylesheet" href="bootstrap.css">
+                <script src="../ext/ext-all-dev.js"></script>
+                <script src="bootstrap.js"></script>
+            <!-- </x-bootstrap> -->
+            <script src="app.js"></script>
+        <!-- </x-compile> -->
+    </head>
+    <body>
+        <div class="nav">
+            <div style="color: white;font-weight: bold;font-family: 'Arial Black', Gadget, sans-serif;font-size: 25px;">
+                Demo
+            </div>
+            <div>
+                <ul class="horizontalMenu">
+                    <li class="selected">
+                        <a href="../app1/index.html">App1</a>
+                    </li>
+                    <li >
+                        <a href="../app2/index.html">App2</a>
+                    </li>
+                    <li >
+                        <a href="../app3/index.html">App3</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div id="main">
+        </div>
+    </body>
 </html>

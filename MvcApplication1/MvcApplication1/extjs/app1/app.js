@@ -9,8 +9,6 @@
 
 Ext.application({
     name: 'App1',
-
     extend: 'App1.Application',
-    
-    autoCreateViewport: true
+    autoCreateViewport: false       // NOTE: use App1.Application.launch() instead
 });
