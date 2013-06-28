@@ -258,8 +258,11 @@
     <Content Include="extjs\app1\app\application.js" />
     <Content Include="extjs\app1\app\controller\Main.js" />
     <Content Include="extjs\app1\app\model\SimpleModel.js" />
+    <Content Include="extjs\app1\app\model\SimpleChartModel.js" />
+    <Content Include="extjs\app1\app\store\SimpleChartStore.js" />
     <Content Include="extjs\app1\app\store\SimpleStore.js" />
     <Content Include="extjs\app1\app\view\SimpleGrid.js" />
+    <Content Include="extjs\app1\app\view\SimpleLineChart.js" />
     <Content Include="extjs\app1\bootstrap.css" />
     <Content Include="extjs\app1\bootstrap.js" />
     <Content Include="extjs\app1\build.xml" />
