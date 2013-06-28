@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Web;
 using System.Web.Http;
 
 namespace MvcApplication1.Controllers.Api
@@ -83,6 +84,50 @@ namespace MvcApplication1.Controllers.Api
         public ChartData[] GetChart(string id)
         {
             return static_ChartData;
+        }
+
+
+        public static string SS_GridDataTemplate = "company: \"{0}\", price: {1}, change: {2:0.##}, pctChange: {3:0.##}, lastChange: \"{4}\"";
+        public static string SS_ChartDataTemplate = "ID: {0}, Month: \"{1}\", Sample1: {2}";
+
+        public static void SerialiseGridData(HttpResponseBase Response)
+        {
+            var data = static_GridData;
+            bool first = true;
+            Response.Write("var SS_GridData = [");
+            foreach (var d in data)
+            {
+                if (!first)
+                {
+                    Response.Write(",");
+                }
+                first = false;
+                Response.Write("{");
+                Response.Write(String.Format(SS_GridDataTemplate,
+                    d.company, d.price, d.change, d.pctChange, d.lastChange.ToString("yyyy-MM-dd")));
+                Response.Write("}");
+            }
+            Response.Write("];");
+        }
+
+        public static void SerialiseChartData(HttpResponseBase Response)
+        {
+            var data = static_ChartData;
+            bool first = true;
+            Response.Write("var SS_ChartData = [");
+            foreach (var d in data)
+            {
+                if (!first)
+                {
+                    Response.Write(",");
+                }
+                first = false;
+                Response.Write("{");
+                Response.Write(String.Format(SS_ChartDataTemplate,
+                    d.ID, d.Month, d.Sample1));
+                Response.Write("}");
+            }
+            Response.Write("];");
         }
     }
 }

@@ -35,12 +35,5 @@ Ext.define('App1.store.SimpleStore', {
     extend: 'Ext.data.Store',
     model: 'App1.model.SimpleModel',
     autoLoad: true,
-    data: (_INDEXHTML === true) ? myData : null,
-    proxy: {
-        type: (_INDEXHTML === true) ? 'memory' : 'ajax',
-        url: '/api/app1/',
-        reader: {
-            type: 'json'
-        }
-    }
+    data: (_INDEXHTML === true) ? myData : SS_GridData || []
 });

@@ -17,12 +17,5 @@ Ext.define('App1.store.SimpleChartStore', {
     extend: 'Ext.data.Store',
     model: 'App1.model.SimpleChartModel',
     autoLoad: true,
-    data: (_INDEXHTML === true) ? chartData : null,
-    proxy: {
-        type: (_INDEXHTML === true) ? 'memory' : 'ajax',
-        url: '/api/app1/chart',
-        reader: {
-            type: 'json'
-        }
-    }
+    data: (_INDEXHTML === true) ? chartData : SS_ChartData || []
 });
